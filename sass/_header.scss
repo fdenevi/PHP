@@ -1,0 +1,38 @@
+header{
+    background-color: black;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 2em;
+
+        .brand{
+            font-weight: 500;
+            color: rgb(198, 79, 202);
+            font-size: 1.5em;
+        }
+
+        .links{
+            ul{
+                display: flex;
+                gap: 3em;
+                li{
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 1.5em;
+                        color: white;
+
+                        &:hover{
+                            color: rgb(145, 187, 93);
+                        }
+                        &:active{
+                            color: rgb(255, 132, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  background-color: black;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+header nav .brand {
+  font-weight: 500;
+  color: rgb(198, 79, 202);
+  font-size: 1.5em;
+}
+header nav .links ul {
+  display: flex;
+  gap: 3em;
+}
+header nav .links ul li {
+  list-style-type: none;
+}
+header nav .links ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: white;
+}
+header nav .links ul li a:hover {
+  color: rgb(145, 187, 93);
+}
+header nav .links ul li a:active {
+  color: rgb(255, 132, 0);
+}
+
+.title {
+  text-align: center;
+  color: rgb(63, 98, 20);
+  font-weight: 300;
+  font-size: 4em;
+  padding: 0.5em 1em;
+}
+
+#unidad1 p {
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  padding: 1em 3em;
+}
+#unidad1 ul {
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 0.5em 4em 1em 4em;
+}
+#unidad1 ul li {
+  list-style-type: circle;
+}
+
+#form {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+#form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#form div label {
+  font-weight: 300;
+  font-size: 2em;
+}
+#form div input {
+  width: 70vw;
+  padding: 0.5em;
+}
+#form div textarea {
+  width: 70vw;
+}
+#form button {
+  font-weight: 500;
+  font-size: 2em;
+  background-color: rgb(198, 79, 202);
+  padding: 0.3em;
+  color: whitesmoke;
+  border-radius: 0.5em;
+  border: none;
+}
+#form button:hover {
+  background-color: rgb(145, 187, 93);
+}
+#form button:active {
+  background-color: rgb(255, 132, 0);
+}
+
+#sendForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+#sendForm h1 {
+  font-weight: 300;
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+}
+#sendForm button {
+  padding: 0.5em;
+  margin-bottom: 2em;
+  background-color: rgb(198, 79, 202);
+  border-radius: 0.5em;
+  border: none;
+}
+#sendForm button:hover {
+  background-color: rgb(145, 187, 93);
+}
+#sendForm button:active {
+  background-color: rgb(255, 132, 0);
+}
+#sendForm button a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+footer {
+  padding: 1.5em;
+  background-color: black;
+}
+footer div {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
