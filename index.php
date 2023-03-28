@@ -5,13 +5,9 @@
         // constante
             const titulo = "Desarrollo Web con PHP y WordPress";
             const nombre = "Florencia Denevi";
-            const html = 38;
-            const js = 34;
-            const reactJs = 28;
 
         //variables
             $edad = 31;
-            $horasCursadas = html + js + reactJs;
     ?>
 
     <section id="unidad1">
@@ -32,13 +28,6 @@
         <?php
             echo "<p>✨ Soy muy responsable y avocada a mis tareas. Se que tengo un largo camino por aprender, pero sin dudas puedo decir que no tengo miedo de atravesarlo.</p>"
         ?>
-
-        <ul>
-            <li>Horas cursadas en HTML Y CSS: <?php echo html ?></li>
-            <li>Horas cursadas en JavaScript: <?php echo js ?></li>
-            <li>Horas cursadas en ReactJs: <?php echo reactJs ?></li>
-            <li>TOTAL DE HORAS CURSADAS: <?php echo $horasCursadas ?></li>
-        </ul>
     </section>
 
     <?php include("footer.php") ?>

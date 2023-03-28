@@ -1,18 +1,18 @@
 #unidad1{
+    padding: 3em;
+
+    .title{
+        text-align: center;
+        color: rgb(63, 98, 20);
+        font-weight: 300;
+        font-size: 4em;
+        padding: 0.5em 1em;
+    }
+    
     p{
         font-size: 2em;
         font-weight: 300;
         text-align: center;
         padding: 1em 3em;
-    }
-
-    ul{
-        font-size: 1.3em;
-        font-weight: 500;
-        padding: 0.5em 4em 1em 4em;
-
-        li{
-            list-style-type: circle;
-        }
     }
 }

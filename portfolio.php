@@ -1,16 +1,33 @@
 <?php
     include("head.php");
     include("header.php");
+
+    //constantes
+    const html = 38;
+    const js = 34;
+    const reactJs = 28;
+
+    //variables
+    $horasCursadas = html + js + reactJs;
 ?>
 
-    <section>
+    <section id="portfolio">
         <h1>PORTFOLIO</h1>
 
-        <div>
+        <div class="cursos">
             <ul>
-                <li><a href="portfolio.php?curso=html">Desarrollo Web</a></li>
-                <li><a href="portfolio.php?curso=js">JavaScript</a></li>
-                <li><a href="portfolio.php?curso=react">ReactJs</a></li>
+                <li><a href="portfolio.php?curso=html">DESARROLLO WEB</a></li>
+                <li><a href="portfolio.php?curso=js">JAVASCRIPT</a></li>
+                <li><a href="portfolio.php?curso=react">REACT JS</a></li>
+            </ul>
+        </div>
+
+        <div class="horasCursos">
+            <ul>
+                <li>Horas cursadas en HTML Y CSS: <?php echo html ?></li>
+                <li>Horas cursadas en JavaScript: <?php echo js ?></li>
+                <li>Horas cursadas en ReactJs: <?php echo reactJs ?></li>
+                <li>TOTAL DE HORAS CURSADAS: <?php echo $horasCursadas ?></li>
             </ul>
         </div>
 
@@ -18,32 +35,49 @@
             if (isset($_GET['curso'])){
                 switch($_GET['curso']){
                     case 'html':
-                        $curso = 'Desarrollo Web';
+                        $imagen = './img/web.png';
+                        $curso = 'DESARROLLO WEB';
                         $lugar = 'CoderHouse';
                         $descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis.';
+                        $repo = 'https://github.com/fdenevi/HTMLproyectoFinalDenevi.git';
+                        $demo = 'https://estudiopatronus.netlify.app/';
                         break;
 
                     case 'js':
-                        $curso = 'JavaScript';
+                        $imagen = './img/js.png';
+                        $curso = 'JAVASCRIPT';
                         $lugar = 'CoderHouse';
                         $descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis.';
+                        $repo = 'https://github.com/fdenevi/JSproyectoFinal.git';
+                        $demo = 'https://flowgrow.netlify.app/';
                         break;
 
                     case 'react':
-                        $curso = 'ReactJs';
+                        $imagen = './img/react.png';
+                        $curso = 'REACT JS';
                         $lugar = 'CoderHouse';
                         $descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis.';
+                        $repo = 'https://github.com/fdenevi/ReactJs_proyecto-final.git';
+                        $demo = 'https://libra-shoes.netlify.app/';
                         break;
                 }
             }
         ?>
 
-        <div>
-            <h2> <?php echo $curso ?> </h2>
-            <h3> <?php echo $lugar ?> </h3>
-            <p> <?php echo $descripcion ?> </p>
+        <div class="info">
+            <div>
+                <img src="<?php echo $imagen ?>" alt="<?php echo $curso ?>">
+            </div>
+            <div>
+                <h2> <?php echo $curso ?> </h2>
+                <h3> <?php echo $lugar ?> </h3>
+                <p> <?php echo $descripcion ?> </p>
+                <div class="links">
+                    <a href="<?php echo $repo ?>" target="_blank">REPO</a>
+                    <a href="<?php echo $demo ?>" target="_blank">DEMO</a>
+                </div>
+            </div>
         </div>
-        
     </section>
 
     <?php include("footer.php") ?>

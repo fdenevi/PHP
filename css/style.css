@@ -49,27 +49,105 @@ header nav .links ul li a:active {
   color: rgb(255, 132, 0);
 }
 
-.title {
+#unidad1 {
+  padding: 3em;
+}
+#unidad1 .title {
   text-align: center;
   color: rgb(63, 98, 20);
   font-weight: 300;
   font-size: 4em;
   padding: 0.5em 1em;
 }
-
 #unidad1 p {
   font-size: 2em;
   font-weight: 300;
   text-align: center;
   padding: 1em 3em;
 }
-#unidad1 ul {
+
+#portfolio {
+  padding: 3em;
+}
+#portfolio h1 {
+  text-align: center;
+  color: rgb(63, 98, 20);
+  font-weight: 300;
+  font-size: 4em;
+  padding: 0.5em 1em;
+}
+#portfolio .cursos {
+  padding: 2em;
+}
+#portfolio .cursos ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+#portfolio .cursos ul li {
+  background-color: black;
+  padding: 0.4em;
+  border-radius: 1em;
+  text-align: center;
+}
+#portfolio .cursos ul li:hover {
+  background-color: rgb(198, 79, 202);
+}
+#portfolio .cursos ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+#portfolio .horasCursos ul {
   font-size: 1.3em;
   font-weight: 500;
   padding: 0.5em 4em 1em 4em;
 }
-#unidad1 ul li {
+#portfolio .horasCursos ul li {
   list-style-type: circle;
+}
+#portfolio .horasCursos ul li a {
+  font-size: 1.5em;
+}
+#portfolio .info {
+  padding: 2em;
+}
+#portfolio .info h2 {
+  text-align: center;
+  font-weight: 500;
+  padding: 1em;
+  font-size: 2.5em;
+}
+#portfolio .info h3 {
+  font-weight: 500;
+  font-size: 2em;
+}
+#portfolio .info p {
+  font-weight: 300;
+  font-size: 1.5em;
+  padding: 1em 0.5em;
+}
+#portfolio .info .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+#portfolio .info .links a {
+  text-decoration: none;
+  background-color: rgb(198, 79, 202);
+  color: white;
+  font-weight: 500;
+  padding: 0.5em;
+  border-radius: 1em;
+  font-size: 1.5em;
+}
+#portfolio .info .links a:hover {
+  background-color: black;
 }
 
 #form {
@@ -151,4 +229,27 @@ footer div {
   color: white;
   font-weight: 500;
   text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  #portfolio .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+  }
+  #portfolio .info img {
+    width: 70vw;
+  }
+}
+@media screen and (min-width: 881px) {
+  #portfolio .info {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+  }
+  #portfolio .info img {
+    width: 40vw;
+  }
 }
