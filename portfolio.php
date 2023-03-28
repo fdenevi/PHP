@@ -39,8 +39,8 @@
                         $curso = 'DESARROLLO WEB';
                         $lugar = 'CoderHouse';
                         $descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis.';
-                        $repo = 'https://github.com/fdenevi/HTMLproyectoFinalDenevi.git';
-                        $demo = 'https://estudiopatronus.netlify.app/';
+                        $repo = '<a href="https://github.com/fdenevi/HTMLproyectoFinalDenevi.git" target="_blank">REPO</a>';
+                        $demo = '<a href="https://estudiopatronus.netlify.app/" target="_blank">DEMO</a>';
                         break;
 
                     case 'js':
@@ -48,8 +48,8 @@
                         $curso = 'JAVASCRIPT';
                         $lugar = 'CoderHouse';
                         $descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis.';
-                        $repo = 'https://github.com/fdenevi/JSproyectoFinal.git';
-                        $demo = 'https://flowgrow.netlify.app/';
+                        $repo = '<a href="https://github.com/fdenevi/JSproyectoFinal.git" target="_blank">REPO</a>';
+                        $demo = '<a href="https://flowgrow.netlify.app/" target="_blank">DEMO</a>';
                         break;
 
                     case 'react':
@@ -57,8 +57,8 @@
                         $curso = 'REACT JS';
                         $lugar = 'CoderHouse';
                         $descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt, nemo, nam exercitationem aliquam reiciendis voluptas sint, earum maxime atque illum. Quam facilis vero ipsum eaque ab nostrum dolorum nobis.';
-                        $repo = 'https://github.com/fdenevi/ReactJs_proyecto-final.git';
-                        $demo = 'https://libra-shoes.netlify.app/';
+                        $repo = '<a href="https://github.com/fdenevi/ReactJs_proyecto-final.git" target="_blank">REPO</a>';
+                        $demo = '<a href="https://libra-shoes.netlify.app/" target="_blank">DEMO</a>';
                         break;
                 }
             }
@@ -73,8 +73,8 @@
                 <h3> <?php echo $lugar ?> </h3>
                 <p> <?php echo $descripcion ?> </p>
                 <div class="links">
-                    <a href="<?php echo $repo ?>" target="_blank">REPO</a>
-                    <a href="<?php echo $demo ?>" target="_blank">DEMO</a>
+                    <?php echo $repo ?>
+                    <?php echo $demo ?>
                 </div>
             </div>
         </div>
