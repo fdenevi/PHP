@@ -2,7 +2,6 @@
         include("head.php");
         include("header.php");
 
-        
         $nombreForm = $_POST ['nombre'];
         $apellidoForm = $_POST ['apellido'];
         $correoForm = $_POST ['email'];
@@ -21,7 +20,7 @@
     ?>
     
         <section id="sendForm">
-            <h1>Mensaje enviado con éxito!</h1>
+            <h1>Gracias <?php print $nombreForm ?>, su mensaje se ha enviado con éxito!</h1>
     
             <button><a href="index.php">Volver a Home</a></button>
         </section>

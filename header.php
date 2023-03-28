@@ -7,6 +7,7 @@
             <div class="links">
                 <ul>
                     <li><a href="index.php">HOME</a></li>
+                    <li><a href="portfolio.php">PORTFOLIO</a></li>
                     <li><a href="contactForm.php">CONTACTO</a></li>
                 </ul>
             </div>
