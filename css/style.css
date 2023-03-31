@@ -63,7 +63,6 @@ header nav .links ul li a:active {
   font-size: 2em;
   font-weight: 300;
   text-align: center;
-  padding: 1em 3em;
 }
 
 #portfolio {
@@ -232,6 +231,9 @@ footer div {
 }
 
 @media screen and (max-width: 880px) {
+  #unidad1 p {
+    padding: 1em;
+  }
   #portfolio .info {
     display: flex;
     flex-direction: column;
@@ -244,6 +246,9 @@ footer div {
   }
 }
 @media screen and (min-width: 881px) {
+  #unidad1 p {
+    padding: 1em 3em;
+  }
   #portfolio .info {
     display: flex;
     align-items: center;

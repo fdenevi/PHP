@@ -10,6 +10,12 @@
 
 
 @media screen and (max-width: 880px){
+    #unidad1{
+        p{
+            padding: 1em;
+        }
+    }
+
     #portfolio{
         .info{
             display: flex;
@@ -26,6 +32,12 @@
 }
 
 @media screen and (min-width: 881px){
+    #unidad1{
+        p{
+            padding: 1em 3em;
+        }
+    }
+
     #portfolio{
         .info{
             display: flex;
