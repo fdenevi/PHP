@@ -14,7 +14,7 @@
             $cuerpoMail
         );
 
-        $conexion = mysqli_connect("localhost","root","","curso_php_wordpress") or exit ("No se puedo establecer la conexión");
+        $conexion = mysqli_connect("localhost","id20674773_datos","EXst|Yp$+uZd8Yx^","id20674773_php_wordpress") or exit ("No se puedo establecer la conexión");
         mysqli_query($conexion, "INSERT INTO consultas VALUES(DEFAULT, '$nombreForm','$apellidoForm', '$correoForm', '$mensajeForm')");
         mysqli_close($conexion);
 
