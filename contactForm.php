@@ -25,8 +25,16 @@
         </div>
 
         <button type="submit">Enviar mensaje</button>
+
+        <?php
+            if(isset ($_GET['ok'])){
+                echo "<h3>Su mensaje ha sido enviado con exito!</h3>";
+            }
+        ?>
     </form>
 
+
+    
     <?php include("footer.php") ?>
 
 </body>

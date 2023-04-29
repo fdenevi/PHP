@@ -1,9 +1,8 @@
 @import "generals";
 @import "header";
 @import "section1";
-@import "portfolio";
+@import "productos";
 @import "form";
-@import "sendForm";
 @import "footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
@@ -14,9 +13,20 @@
         p{
             padding: 1em;
         }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                border-radius: 3em;
+                max-width: 50%;
+            }
+        }
     }
 
-    #portfolio{
+    #productos{
         .info{
             display: flex;
             flex-direction: column;
@@ -36,9 +46,20 @@
         p{
             padding: 1em 3em;
         }
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                border-radius: 3em;
+                max-width: 30%;
+            }
+        }
     }
 
-    #portfolio{
+    #productos{
         .info{
             display: flex;
             align-items: center;

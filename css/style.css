@@ -26,7 +26,7 @@ header nav {
 }
 header nav .brand {
   font-weight: 500;
-  color: rgb(198, 79, 202);
+  color: rgb(223, 178, 142);
   font-size: 1.5em;
 }
 header nav .links ul {
@@ -59,26 +59,26 @@ header nav .links ul li a:active {
   font-size: 4em;
   padding: 0.5em 1em;
 }
-#unidad1 p {
+#unidad1 div p {
   font-size: 2em;
   font-weight: 300;
   text-align: center;
 }
 
-#portfolio {
+#productos {
   padding: 3em;
 }
-#portfolio h1 {
+#productos h1 {
   text-align: center;
   color: rgb(63, 98, 20);
   font-weight: 300;
   font-size: 4em;
   padding: 0.5em 1em;
 }
-#portfolio .cursos {
+#productos .productos {
   padding: 2em;
 }
-#portfolio .cursos ul {
+#productos .productos ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,67 +86,48 @@ header nav .links ul li a:active {
   flex-wrap: wrap;
   list-style-type: none;
 }
-#portfolio .cursos ul li {
+#productos .productos ul li {
   background-color: black;
   padding: 0.4em;
   border-radius: 1em;
   text-align: center;
 }
-#portfolio .cursos ul li:hover {
+#productos .productos ul li:hover {
   background-color: rgb(198, 79, 202);
 }
-#portfolio .cursos ul li a {
+#productos .productos ul li a {
   text-decoration: none;
   color: white;
   font-size: 2em;
 }
-#portfolio .horasCursos ul {
+#productos .totalProductos ul {
   font-size: 1.3em;
   font-weight: 500;
   padding: 0.5em 4em 1em 4em;
 }
-#portfolio .horasCursos ul li {
+#productos .totalProductos ul li {
   list-style-type: circle;
 }
-#portfolio .horasCursos ul li a {
+#productos .totalProductos ul li a {
   font-size: 1.5em;
 }
-#portfolio .info {
+#productos .info {
   padding: 2em;
 }
-#portfolio .info h2 {
+#productos .info h2 {
   text-align: center;
   font-weight: 500;
   padding: 1em;
   font-size: 2.5em;
 }
-#portfolio .info h3 {
+#productos .info h3 {
   font-weight: 500;
   font-size: 2em;
 }
-#portfolio .info p {
+#productos .info p {
   font-weight: 300;
   font-size: 1.5em;
   padding: 1em 0.5em;
-}
-#portfolio .info .links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3em;
-  flex-wrap: wrap;
-}
-#portfolio .info .links a {
-  text-decoration: none;
-  background-color: rgb(198, 79, 202);
-  color: white;
-  font-weight: 500;
-  padding: 0.5em;
-  border-radius: 1em;
-  font-size: 1.5em;
-}
-#portfolio .info .links a:hover {
-  background-color: black;
 }
 
 #form {
@@ -188,38 +169,6 @@ header nav .links ul li a:active {
   background-color: rgb(255, 132, 0);
 }
 
-#sendForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2em;
-}
-#sendForm h1 {
-  font-weight: 300;
-  font-size: 3em;
-  text-align: center;
-  padding: 1em;
-}
-#sendForm button {
-  padding: 0.5em;
-  margin-bottom: 2em;
-  background-color: rgb(198, 79, 202);
-  border-radius: 0.5em;
-  border: none;
-}
-#sendForm button:hover {
-  background-color: rgb(145, 187, 93);
-}
-#sendForm button:active {
-  background-color: rgb(255, 132, 0);
-}
-#sendForm button a {
-  text-decoration: none;
-  color: whitesmoke;
-  font-weight: 500;
-  font-size: 1.5em;
-}
-
 footer {
   padding: 1.5em;
   background-color: black;
@@ -234,14 +183,23 @@ footer div {
   #unidad1 p {
     padding: 1em;
   }
-  #portfolio .info {
+  #unidad1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #unidad1 div img {
+    border-radius: 3em;
+    max-width: 50%;
+  }
+  #productos .info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
     text-align: center;
   }
-  #portfolio .info img {
+  #productos .info img {
     width: 70vw;
   }
 }
@@ -249,12 +207,21 @@ footer div {
   #unidad1 p {
     padding: 1em 3em;
   }
-  #portfolio .info {
+  #unidad1 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #unidad1 div img {
+    border-radius: 3em;
+    max-width: 30%;
+  }
+  #productos .info {
     display: flex;
     align-items: center;
     gap: 4em;
   }
-  #portfolio .info img {
+  #productos .info img {
     width: 40vw;
   }
 }

@@ -1,4 +1,4 @@
-#portfolio{
+#productos{
     padding: 3em;
 
     h1{
@@ -9,7 +9,7 @@
         padding: 0.5em 1em;
     }
 
-    .cursos{
+    .productos{
         padding: 2em;
 
         ul{
@@ -38,7 +38,7 @@
         }
     }
 
-    .horasCursos{
+    .totalProductos{
         ul{
             font-size: 1.3em;
             font-weight: 500;
@@ -73,27 +73,6 @@
             font-weight: 300;
             font-size: 1.5em;
             padding: 1em 0.5em;
-        }
-
-        .links{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 3em;
-            flex-wrap: wrap;
-
-            a{
-                text-decoration: none;
-                background-color: rgb(198, 79, 202);
-                color: white;
-                font-weight: 500;
-                padding: 0.5em;
-                border-radius: 1em;
-                font-size: 1.5em;
-                &:hover{
-                    background-color: black;
-                }
-            }
         }
     }
 }

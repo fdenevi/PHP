@@ -1,7 +1,4 @@
-    <?php 
-        include("head.php");
-        include("header.php");
-
+<?php 
         $nombreForm = $_POST ['nombre'];
         $apellidoForm = $_POST ['apellido'];
         $correoForm = $_POST ['email'];
@@ -12,20 +9,13 @@
                         "Correo electronico: ".$correoForm. "\r\n".
                         "Mensaje: ".$mensajeForm;
     
-        mail(
-            "fdenevi@hotmail.com",
+        mail("fdenevi@hotmail.com",
             "enviado desde web",
             $cuerpoMail
         );
-    ?>
-    
-        <section id="sendForm">
-            <h1>Gracias <?php print $nombreForm ?>, su mensaje se ha enviado con éxito!</h1>
-    
-            <button><a href="index.php">Volver a Home</a></button>
-        </section>
 
-        <?php include("footer.php") ?>
-        
-</body>
-</html>
+        $conexion = mysqli_connect("localhost","root","","curso_php_wordpress") or exit ("No se puedo establecer la conexión");
+        mysqli_query($conexion, "INSERT INTO consultas VALUES(DEFAULT, '$nombreForm','$apellidoForm', '$correoForm', '$mensajeForm')");
+        mysqli_close($conexion);
+
+        header("Location:contactForm.php?ok");
